@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <div class="set" >
+        <img [src]="" alt="">
+        <div class="det">
+            <h3>{{cart.header}}</h3>
+        <div class="line">
+            <p> ${{cart.price}} x {{cart.amt}} </p>
+            <p class="bl">${{cart.price * cart.amt}} </p>
+        </div>
+        </div>
+        <i  class="material-icon bin" (click)="deleteClick()">bin</i>
+    </div>
+    
+    
+
+    
+</div>
