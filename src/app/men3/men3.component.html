@@ -1,0 +1,112 @@
+<div class="app-wrapper">
+
+  <div class="center">
+    <div class="box1">
+        <img [src]="imgs" alt="" class="main" (click)="openModal()" >
+     
+      <div class="img row">
+        
+        <div class="column">
+          <img [src]="im" alt="" (click)="pic();currentSlide(1)" class="hover-shadow">
+        </div>
+
+        <div class="column">
+          <img [src]="im1" (click)="pic1();currentSlide(2)" class="hover-shadow">
+        </div>
+
+        <div class="column">
+          <img [src]="im2" alt="" (click)="pic2();currentSlide(3)" class="hover-shadow">
+        </div>
+
+        <div class="column">
+          <img [src]='im3' alt="" (click)="pic3();currentSlide(4)" class="hover-shadow">
+        </div>
+          
+      
+    </div>
+    
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" (click)="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img [src]="im" style="width:100%; height: 500px;">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img [src]="im1" style="width:100%; height: 500px;">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img [src]="im2" style="width:100%; height: 500px;">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img [src]="im3" style="width:100%; height: 500px;">
+        </div>
+    
+        <!-- Next/previous controls -->
+        <a class="prev" (click)="plusSides(-1)">&#10094;</a>
+        <a class="next" (click)="plusSides(1)">&#10095;</a>
+    
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+        <!-- Thumbnail image controls -->
+        <div class="dotz">          
+        <div class="column">
+          <img class="demo" [src]="im" (click)="currentSlide(1)" alt="Nature">
+        </div>
+    
+        <div class="column">
+          <img class="demo" [src]="im1" (click)="currentSlide(2)" alt="Snow">
+        </div>
+    
+        <div class="column">
+          <img class="demo" [src]="im2" (click)="currentSlide(3)" alt="Mountains">
+        </div>
+    
+        <div class="column">
+          <img class="demo" [src]="im3" (click)="currentSlide(4)" alt="Lights">
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="box2" >
+      <h3> nike</h3>
+      <h1>Jordans Air</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus modi dignissimos placeat nostrum at rerum libero asperiores, dolores excepturi amet omnis obcaecati itaque sapiente, eum labore repudiandae officiis distinctio sunt.</p>
+      <div class="ro">
+        <div class="pry">
+          <span class="price"> $250.00</span>
+          <span class="s1">9%</span>
+        </div>
+        <p class="subp">$275.00</p>
+      </div>
+      
+
+      <div class="final">
+        <div class="add">
+          <span class="as" (click)="subnum()">-</span>
+          <span id="ch" > {{num}} </span>
+          <span class="as" (click)="addnum()">+</span>
+        </div>
+        <button (click)="addCart()">
+          <i class="material-icon"> shopping_cart</i>
+          <p>Add to cart</p>
+        </button>
+      </div>
+      
+    </div>
+  </div>
+</div>

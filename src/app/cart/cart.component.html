@@ -1,0 +1,8 @@
+<div class="ra">
+    <div class="in">
+        <h1>Cart</h1>
+        <span class="close cursor" (click)="closeCart()">&times;</span>
+    </div>
+   <app-highlightm1 (deleteClicks)="deleteClick(carts)" *ngFor="let carts of cart" [cart]="carts" ></app-highlightm1>
+   <button class="check">  Checkout </button>
+</div>

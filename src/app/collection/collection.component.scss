@@ -1,0 +1,79 @@
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    h2{
+        display: flex;
+        text-align: left;
+        text-decoration: none;
+
+    }
+    h1{
+        border-bottom: 1px grey solid;
+    }
+    .her{
+        margin-top: 30px;
+    }
+    img {
+        width: 800px;
+        height: 800px;
+    }
+ 
+    
+}
+.slide-frame{
+    display: inherit;
+    flex-direction: row;
+    align-items: center;
+   overflow: hidden;
+    height: 800px;
+    width: 800px;
+    
+    margin-top: 20px;
+}
+@keyframes slide_animation {
+    0% {left: 790px;}
+    10% {left: 790px;}
+    20% {left: 790px;}
+    30% {left: 1590px;}
+    40% {left: 1590px;}
+    50% {left: 1590px;}
+    60% {left: 2390px;}
+    70% {left: 2390px;}
+    80% {left: 2390px;}
+    90% {left: 1590px;}
+    100% {left: 1590px;}
+}
+.slide-image{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+.img-con{
+    height: 600px;
+    width: 800px;
+    position: relative;
+    float: left;
+}
+.to1{
+    margin-top: 70px;
+}
+.to2{
+    margin-top: 30px;
+    margin-bottom: -100px;
+}
